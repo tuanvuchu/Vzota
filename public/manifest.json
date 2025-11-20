@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Vzota",
+  "version": "1.0.0",
+  "description": "Mở khóa tính năng VIP, point không giới hạn cho Azota",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "key": "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCcYloEUq3FgWLdP5Zh94+anIWbU1I+mNc4LlqjSqD++uEHzR8tyPyjpMOPZzCcfPPgHENq40ctXAiD/SdLACCoAkdOHX92ZyADP5kd4eqpCr7ZPzEDgTyV6nBQQJGaWokdjFSs4prDQqFCs6ko5CWTmqaSXdH9l13ZIcMclzb+jsWPQq8JrlqyPmWo2MFuGiXYHbQ8/hqtGfuJdmmYayy8TQoGXY4vb01fzSnWWjGEMIr+pFDUu9qe0BKCXnNU5LQtOmPKYfuLyHS7XR6R7Pld2+9xuA5ZI/iSkJX/OM4CA+2vwB8wvpenraWu5q69odZShUUrBDezeXXwnlG3cRkjAgMBAAECggEABNfA3OBolDSxCJP3BrqhXlLZillWsyyNgaZh1Suy96JyRIkUHZlbRYANNEwoQ7hU3wxRBCbcpelzNA8rX9W1rS5A4gjk0RhZc/BMwBGmcCyug1DDJk4iv6u+ZaXSPHrwQxN87cuoqkJOdx/ULbl+9ma0INU58wX0eIxkm+aM4+4gf050GaMP29vf8qx0xOnL/0ooZmGs8RvIZyaDFCp8dBdLKeSrf5zyaZ3F9BktRmhrHMsOpsJJ2W8cy/ySCwVbusjSCFaxgCkU/ZV1zRnPT784t0L59/eYO4F827XUBZSo8bBzWBf6R/5yQxbvkvmkuXSOtAxsLRSTCO5ftyFU5QKBgQDYA7fA5/uWoB6qiuWNMhDa/vU4VJ7fumKpwyCfRaLExg/k47phLHtSGji4zpKS6XC2zup/q6W6sbCy+2XzOm02T2m82LiDtfXYKhBfYirRLHYNJHmAau00noUFdsF0AqDBiMuSAakfppkAKB6YYOY0UCs+/g3rf7L6VqbY4vsb5wKBgQC5VO42tqYGvteqplGgamJbrU4c206aJcYz0zZKJKuxvmQXDBRWKQ3WPezLHDKqMtlemQfngqcr4aYPmvsE+tF15tPkSm+G/YvUDEq+O5n+Hkif1BArS+10CAKwW7nshSKmJeV5P5FKWGdMd67WvHIBW6+W+Gi9qhAB8HJgW71RZQKBgF6iKlM5ji+r0CN4nB4iS94VCgr2j2+GMQkcMeN0110LRBVLavB9Uz1hvW3BGdeAq197AKKT6RQEGlwe5MgM1aGQYstXymXxRlW//9I5qHZg2wrg6tXGgkqmE7KUFyYirJh8vGonjhcOnkLCUL0C3ncWlAuRszlzhU5Eve2QauALAoGAFq4CCMgJQUIRelyoGI1sQ/PNX1KnJ83/l0/9kM00Baha70cXJgQYIWOqmqB0wsc+OolXokkm1APlInvAxDc9csQwoftJ8qcMeYKXkvgQPDzQfl6hK+s6v7xLN/HBquQP/W0dy9yvlv2ChqUOzFB7Uxc5QaxchPlOxC38kTYo0NECgYBZNa8tI7f1/Xup24W5ySOybtSzxP7GmqqWbaoykgsYouvYb4FAIJqQpMzuCLfxqDjabNJkvLmVQhIwl34Nl73RIfBwqzrLikgbI4P3Gw7l4H9ecsh4/0XemyeF5dMCZ3aooMA2Kqt23yryjeLiCRldrT6asOzZ2s8nRXIOXbNqaQ==",
+  "permissions": ["scripting", "tabs"],
+  "background": {
+    "service_worker": "assets/background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/content.js"],
+      "matches": ["https://azota.vn/*"]
+    }
+  ],
+  "host_permissions": ["https://azota.vn/*"]
+}
