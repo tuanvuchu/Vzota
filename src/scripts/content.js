@@ -1,3 +1,11 @@
+document.addEventListener(
+  "visibilitychange",
+  function (e) {
+    e.stopImmediatePropagation();
+  },
+  true
+);
+
 const targetAPIs = [
   "api/VipPackage/GetMyPackage",
   "api/PayAsGoPayment/GetCurrentPoint",

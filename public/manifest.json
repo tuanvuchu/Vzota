@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Vzota",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mở khóa tính năng VIP, point không giới hạn cho Azota",
   "icons": {
     "16": "images/icon-16.png",
